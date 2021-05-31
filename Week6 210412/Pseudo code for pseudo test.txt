@@ -1,0 +1,36 @@
+maxGuesses = 7
+guessesRemaining = maxGuesses 
+
+guessList = [The guesses from the user]
+
+randomNumberMax = 26
+randomNumberMin = 0
+randomNumber = (random value between randomNumberMin & randomNumberMax)
+
+lessThanText = "The number you entered is less than the answer."
+greaterThanText = " The number you entered is greater than the answer."
+usersGuess = input("Please guess a random number between randomNumberMin and randomNumberMax")
+
+while usersGuess != randomNumber:
+	
+
+	if usersGuess < randomNumber:
+		print(lessThanText)
+	else
+		print(greaterThanText)
+	guessesRemaining = guessesRemaining - 1
+	guessList.append(usersGuess)
+	if guessesRemaining > 0
+		usersGuess = input("Please try again")
+	else
+		break:
+if usersGuess == randomNumber
+	guessList.append(usersGuess)
+	print("Congrats, you guessed correctly! Your guesses were: " + guessList
+else
+	print("Ya fool, ya guessed wrong. The answer was " + randomNumber)
+
+
+
+
+
